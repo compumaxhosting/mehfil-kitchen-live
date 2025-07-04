@@ -30,7 +30,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Mehfil Kitchen",
-  "image": "https://www.mehfilkitchen.com/assets/images/logo.png",
+  "image": "https://www.mehfilkitchen.com/logo2.png",
   "@id": "https://www.mehfilkitchen.com/",
   "url": "https://www.mehfilkitchen.com/",
   "telephone": "+1-786-763-4000",
