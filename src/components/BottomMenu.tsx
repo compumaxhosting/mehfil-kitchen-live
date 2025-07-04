@@ -1,5 +1,6 @@
 import React from 'react'
 import { Phone, MapPin, Menu } from 'lucide-react'
+import Link from 'next/link'
 
 export const BottomMenu = () => {
   return (
@@ -12,10 +13,13 @@ export const BottomMenu = () => {
       </a>
 
       {/* Menu */}
-      <button className="flex flex-col items-center text-xs focus:outline-none">
-        <Menu className="w-6 h-6 text-[#e6d38d]" />
-        <span className="mt-1 text-white">Menu</span>
-      </button>
+    <Link
+      href="/menu"
+      className="flex flex-col items-center text-xs"
+    >
+      <Menu className="w-6 h-6 text-[#e6d38d]" />
+      <span className="mt-1 text-white">Menu</span>
+    </Link>
 
       {/* Location */}
       <a
