@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutSection() {
     return (
-        <section className="w-full pt-16 pb-8 px-4">
+        <section className="w-full pt-8 pb-4 px-4">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
                 {/* Left Content */}
