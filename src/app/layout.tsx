@@ -1,6 +1,6 @@
 import './globals.css'
 import { Josefin_Sans } from 'next/font/google'
-import Script from 'next/script' // ✅ Use this instead of Head
+import Script from 'next/script' // ✅ Use only in <body>, no "use client" here
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -71,7 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={josefin.variable}>
       <body>
-        {/* ✅ Inject schema.org JSON-LD using next/script */}
+        {/* ✅ Inject JSON-LD schema only from body (allowed) */}
         <Script
           id="schema-jsonld"
           type="application/ld+json"
