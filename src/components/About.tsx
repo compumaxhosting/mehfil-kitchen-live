@@ -7,7 +7,7 @@ export default function AboutSection() {
 
                 {/* Left Content */}
                 <div className="md:w-1/2 text-center">
-                    <h2 className="text-[36px] font-semibold mb-6 text-gray-800">
+                    <h2 className="text-[33px] sm:text-[36px] font-semibold mb-6 text-gray-800">
                         About Mehfil Kitchen
                     </h2>
                     <div className="text-[16px] text-gray-700 space-y-2 leading-relaxed">
