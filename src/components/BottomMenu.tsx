@@ -13,12 +13,45 @@ export const BottomMenu = () => {
       </a>
 
       {/* Menu */}
+      <Link
+        href="/menu"
+        className="flex flex-col items-center text-xs"
+      >
+        <Menu className="w-6 h-6 text-[#e6d38d]" />
+        <span className="mt-1 text-white">Menu</span>
+      </Link>
+
+      {/* Catering */}
     <Link
-      href="/menu"
+      href="/catering"
       className="flex flex-col items-center text-xs"
     >
-      <Menu className="w-6 h-6 text-[#e6d38d]" />
-      <span className="mt-1 text-white">Menu</span>
+      {/* Elegant cloche/serving tray SVG icon for catering */}
+      <span className="w-6 h-6 flex items-center justify-center">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="text-[#e6d38d]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 17h16a6 6 0 10-16 0zm8-9v-1a2 2 0 10-4 0"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M2 17h20"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+        </svg>
+      </span>
+      <span className="mt-1 text-white">Catering</span>
     </Link>
 
       {/* Location */}
