@@ -155,6 +155,9 @@ const ReviewSlider = () => {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">
+                        Testimonials
+                    </h2>
         <h2 id="overall-rating-heading" className="text-4xl font-bold text-white flex items-center justify-center font-inter">
           4.7
           <span className="ml-2 text-[#FFBB29]" aria-hidden="true">
