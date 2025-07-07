@@ -27,9 +27,9 @@ export default function AboutSection() {
 
                 {/* Right Image with Rotation */}
                 <div className="md:w-1/2 flex justify-center items-center overflow-hidden">
-                    <div className="w-72 sm:w-72 md:w-[400px] aspect-square rounded-full overflow-hidden relative animate-[spin_20s_linear_infinite]">
+                    <div className="w-72 sm:w-72 md:w-[400px] aspect-square  overflow-hidden relative animate-[spin_20s_linear_infinite]">
                         <Image
-                            src="/about-biryani.png"
+                            src="/about.png"
                             alt="About Mehfil"
                             fill
                             className="object-contain"
