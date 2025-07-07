@@ -176,6 +176,7 @@ const ReviewSlider = () => {
 
       <div className="px-4 max-w-6xl md:mx-auto" role="region" aria-label="Customer Reviews Slider">
         <Swiper
+        className="!pb-10"
           slidesPerView={1}
           spaceBetween={20}
           breakpoints={{
