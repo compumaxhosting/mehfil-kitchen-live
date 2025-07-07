@@ -163,7 +163,7 @@ const ReviewSlider = () => {
           <span className="sr-only">out of 5 stars</span>
         </h2>
         <Link
-          href="https://www.google.com/search?...replace_with_actual_url..."
+          href="https://www.google.com/search?sca_esv=2dee1d6b047c2499&sxsrf=AE3TifP0LL7Hv0t_8DQVbOZN9lQHhZfeog:1751890645587&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-Ex253afy6xhITSHq9spx6L2qeBWv2lqpKbDJvDA48T1NbHYFQ3mQquUgAGuEOlIddkETuTze-Jx-bF-DC3b5p55jeu6B&q=MEHFIL+KITCHEN+Reviews&sa=X&ved=2ahUKEwjAgvac3aqOAxWNS2wGHXazHVMQ0bkNegQIJBAE&biw=1920&bih=945&dpr=1#lrd=0x880fcf3ea7599a51:0x88cdb651c9c153f0,3,,,,"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Review us on Google. Opens in a new tab."
