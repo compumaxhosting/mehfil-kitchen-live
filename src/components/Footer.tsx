@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { BottomMenu } from './BottomMenu'
+import Image from 'next/image'
 
 export const Footer = () => {
     return (
@@ -11,7 +12,7 @@ export const Footer = () => {
                     {/* ABOUT US */}
                     <div className='w-full md:w-1/3 px-2'>
                         <div className="flex flex-col pb-6">
-                            <h2 className="text-lg font-semibold text-white mb-4">About Mehfil Kitchen</h2>
+                            <Image src="/logo2.png" alt="Mehfil Kitchen Logo" width={100} height={150}/>
                         </div>
                         <p className='text-sm text-white'>
                             Experience the authentic taste of Hyderabadi cuisine in the heart of Skokie. Our food is a celebration of tradition, flavor, and culture.                        </p>
@@ -22,7 +23,7 @@ export const Footer = () => {
                         <div className="flex flex-col pb-2">
                             <h2 className="text-lg font-semibold text-white mb-4">Quick Links</h2>
                         </div>
-                        <ul className=' font-thin text-sm text-white space-y-2 sm:space-y-1'>
+                        <ul className='list-disc pl-5 font-thin text-sm text-white space-y-2 sm:space-y-1'>
                             <li>
                                 <Link href="/">Home</Link>
                             </li>
