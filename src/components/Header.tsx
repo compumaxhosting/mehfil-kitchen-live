@@ -1,13 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [cateringDropdownOpen, setCateringDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,15 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const cateringItems = [
+    { name: 'Birthday Catering', href: '/birthday' },
+    { name: 'Wedding Catering', href: '/wedding' },
+    { name: 'Party Orders', href: '/party' },
+    { name: 'Event Catering', href: '/event' },
+    { name: 'Corporate Meals', href: '/corporate' },
+    { name: 'On-Demand Orders', href: '/ondemand' },
+  ];
 
   return (
     <header
@@ -56,14 +66,55 @@ export default function Navbar() {
 
         {/* Right Links */}
         <div className="hidden lg:flex gap-32 text-white items-center">
-          {['Gallery', 'Catering', 'Contact'].map((text) => (
-            <Link key={text} href={`/${text.toLowerCase()}`} className="relative group">
-                <span className="text-white flex flex-col items-center">
-                {text}
-                <span className="absolute left-1/2 top-full mt-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0" />
+          {/* Gallery Link */}
+          <Link href="/gallery" className="relative group">
+            <span className="text-white flex flex-col items-center">
+              Gallery
+              <span className="absolute left-1/2 top-full mt-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0" />
+            </span>
+          </Link>
+
+          {/* Catering with Dropdown */}
+          <div 
+            className="relative group"
+            onMouseEnter={() => setCateringDropdownOpen(true)}
+            onMouseLeave={() => setCateringDropdownOpen(false)}
+          >
+            <Link href="/catering" className="relative group">
+              <span className="text-white flex flex-col items-center">
+                <span className="flex items-center gap-1">
+                  Catering
+                  <ChevronDown size={16} className={`transition-transform duration-200 ${cateringDropdownOpen ? 'rotate-180' : ''}`} />
                 </span>
+                <span className="absolute left-1/2 top-full mt-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0" />
+              </span>
             </Link>
-          ))}
+            
+            {/* Dropdown Menu */}
+            <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${
+              cateringDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'
+            }`}>
+              <div className="py-2 w-48">
+                {cateringItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#e6d38d] hover:text-black transition-colors duration-200"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Link */}
+          <Link href="/contact" className="relative group">
+            <span className="text-white flex flex-col items-center">
+              Contact
+              <span className="absolute left-1/2 top-full mt-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0" />
+            </span>
+          </Link>
         </div>
 
         {/* Hamburger Button */}
@@ -81,7 +132,7 @@ export default function Navbar() {
         }`}
       >
         <div className="px-6 py-4 text-black space-y-2">
-          {['Home', 'About', 'Menu', 'Gallery', 'Catering', 'Contact'].map((text) => (
+          {['Home', 'About', 'Menu', 'Gallery'].map((text) => (
             <Link
               key={text}
               href={text === 'Home' ? '/' : `/${text.toLowerCase()}`}
@@ -90,8 +141,44 @@ export default function Navbar() {
               {text}
             </Link>
           ))}
+          
+          {/* Mobile Catering with Submenu */}
+          <div>
+            <button
+              onClick={() => setCateringDropdownOpen(!cateringDropdownOpen)}
+              className="flex items-center justify-between w-full py-2 border-b border-gray-200"
+            >
+              <span>Catering</span>
+              <ChevronDown size={16} className={`transition-transform duration-200 ${cateringDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+            
+            {/* Mobile Submenu */}
+            <div className={`overflow-hidden transition-all duration-300 ${
+              cateringDropdownOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+            }`}>
+              <div className="pl-4 py-2 space-y-1">
+                <Link href="/catering" className="block py-1 text-sm text-gray-600 hover:text-black">
+                  All Catering Services
+                </Link>
+                {cateringItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="block py-1 text-sm text-gray-600 hover:text-black"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <Link href="/contact" className="block py-2 border-b border-gray-200">
+            Contact
+          </Link>
+          
           {/* Social Icons - Left Side */}
-            <div className='flex flex-row gap-4 pt-3 justify-center'>
+          <div className='flex flex-row gap-4 pt-3 justify-center'>
             {/* Facebook */}
             <a href="https://www.facebook.com/mehfilkitchen/" target="_blank" className='flex items-center justify-center w-10 h-10 rounded-full bg-[#e6d38d]  hover:bg-[#1a3c34] transition-all duration-300'>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='text-black'>
@@ -116,7 +203,7 @@ export default function Navbar() {
             <path d="M10 15L15.19 12L10 9V15ZM21.56 7.17C21.69 7.64 21.78 8.27 21.84 9.07C21.91 9.87 21.94 10.56 21.94 11.16L22 12C22 14.19 21.84 15.8 21.56 16.83C21.31 17.73 20.73 18.31 19.83 18.56C19.36 18.69 18.5 18.78 17.18 18.84C15.88 18.91 14.69 18.94 13.59 18.94L12 19C7.81 19 5.2 18.84 4.17 18.56C3.27 18.31 2.69 17.73 2.44 16.83C2.31 16.36 2.22 15.73 2.16 14.93C2.09 14.13 2.06 13.44 2.06 12.84L2 12C2 9.81 2.16 8.2 2.44 7.17C2.69 6.27 3.27 5.69 4.17 5.44C4.64 5.31 5.5 5.22 6.82 5.16C8.12 5.09 9.31 5.06 10.41 5.06L12 5C16.19 5 18.8 5.16 19.83 5.44C20.73 5.69 21.31 6.27 21.56 7.17Z" fill="currentColor" />
               </svg>
             </a>
-            </div>
+          </div>
         </div>
       </div>
     </header>
