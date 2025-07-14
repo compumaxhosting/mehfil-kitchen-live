@@ -6,8 +6,8 @@ export default function AboutSection() {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
                 {/* Left Content */}
-                <div className="md:w-1/2 text-center">
-                    <h2 className="text-[33px] sm:text-[36px] font-semibold mb-6 text-gray-800">
+                <div className="md:w-1/2 text-left">
+                    <h2 className="text-[33px] sm:text-[36px] text-center font-semibold mb-6 text-gray-800">
                         About Mehfil Kitchen
                     </h2>
                     <div className="text-[16px] text-gray-700 space-y-2 leading-relaxed">
@@ -23,6 +23,7 @@ export default function AboutSection() {
                         </p>
                     </div>
                 </div>
+
 
 
                 {/* Right Image with Rotation */}
