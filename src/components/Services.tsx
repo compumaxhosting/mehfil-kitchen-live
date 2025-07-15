@@ -53,6 +53,7 @@ export default function ServicesSection() {
                     <h2 className="text-[36px] font-semibold text-[#1a3c34] mb-4">Our Services</h2>
                     <p className="text-gray-700 mb-12 max-w-2xl mx-auto">
                         Mehfil Kitchen offers authentic Hyderabadi cuisine for all occasions. Whether it&apos;s a private gathering or a grand celebration.
+                         {/* Forced rebuild by adding this comment */}
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
