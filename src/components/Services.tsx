@@ -52,9 +52,14 @@ export default function ServicesSection() {
                 <div className="max-w-7xl mx-auto text-center">
                     <h2 className="text-[36px] font-semibold text-[#1a3c34] mb-4">Our Services</h2>
                     <p className="text-gray-700 mb-12 max-w-2xl mx-auto">
-                        Mehfil Kitchen offers authentic Hyderabadi cuisine for all occasions. Whether it&apos;s a private gathering or a grand celebration.
+                        Mehfil Kitchen in Skokie, IL, offers authentic Indian and Hyderabadi catering services for birthdays, weddings, corporate events, and parties. Our menu features specialty dishes like Hyderabadi Mutton Dum Biryani, Chicken Biryani, Hyderabadi Mutton Fry,
                     </p>
-
+                    <p className="text-gray-700 mb-12 max-w-2xl mx-auto">
+                        Chicken Reshmi Kabob, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, Shahi Rice, and more.We proudly serve key areas including Evanston, Lincolnwood, Wilmette, Morton Grove, Glenview, Niles, Des Plaines, Park Ridge, and Arlington Heights.
+                    </p>
+                    <p className="text-gray-700 mb-12 max-w-2xl mx-auto">
+                        Whether you need catering for intimate gatherings or large events, Mehfil Kitchen delivers fresh, flavorful meals with options for on-demand orders, party catering, and corporate meals.
+                    </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {services.map((service, idx) => (
                             <Link href={service.link} key={idx} passHref>
