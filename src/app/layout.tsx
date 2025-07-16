@@ -1,4 +1,5 @@
-import '../globals.css' // ✅ correct
+import './globals.css' // ✅
+
 
 import { Josefin_Sans } from 'next/font/google'
 import Script from 'next/script' // ✅ Use only in <body>, no "use client" here
