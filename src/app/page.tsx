@@ -11,6 +11,9 @@ export default function Home() {
   return (
     <>
       <Header />
+       <div className="text-blue-500 text-3xl p-5 border border-red-500">
+      ✅ Tailwind is working in production
+    </div>
       <HeroSection />
       <About />
       <Services />
