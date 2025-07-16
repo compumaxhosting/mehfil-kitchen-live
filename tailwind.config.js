@@ -1,13 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export const content = [
-  "./app/**/*.{js,ts,jsx,tsx}",
-  "./src/**/*.{js,ts,jsx,tsx}",
-];
-export const theme = {
-  extend: {
-    fontFamily: {
-      sans: [ 'var(--font-josefin)', 'sans-serif' ],
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",   // <- important
+    "./components/**/*.{js,ts,jsx,tsx}", // <- if using custom components
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-josefin)', 'sans-serif'],
+      },
     },
   },
-};
-export const plugins = [];
+  plugins: [],
+}
