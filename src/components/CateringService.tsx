@@ -27,6 +27,11 @@ interface ServiceData {
   galleryImages: string[];
   ctaTitle: string;
   ctaText: string;
+  linkContent: string;
+  ctaLink?: {
+   
+    url: string;
+  };
 }
 
 interface ServicePageProps {
@@ -35,61 +40,73 @@ interface ServicePageProps {
 
 const serviceData: Record<ServiceKey, ServiceData> = {
   'birthday': {
-    title: 'Birthday Catering',
-    heroSubtitle: 'Celebrate your special day with authentic Hyderabadi flavors',
-    heroImage: '/birthday-hero.jpg',
-    introTitle: 'Unforgettable Birthday Celebrations',
-    introText: 'Looking for the best Indian food catering for birthdays in Chicago? Whether you\'re hosting a small family dinner or a grand birthday party, we bring authentic Indian taste and professional service right to your celebration.',
-    introImage: '/birthday-intro.jpg',
-    features: [
-      {
-        title: "Custom Birthday Menus",
-        description: "Choose from our selection or work with our chefs to create a personalized menu",
-        icon: '/catering-icons/cake.gif'
-      },
-      {
-        title: "Theme Coordination",
-        description: "We align our presentation with your party theme for a cohesive experience",
-        icon: '/catering-icons/palette.png'
-      },
-      {
-        title: "Age-Appropriate Options",
-        description: "Special menus for kids, teens, and adult celebrations",
-        icon: '/catering-icons/menu.gif'
-      },
-      {
-        title: "Full Service",
-        description: "Delivery, setup, servers, cleanup",
-        icon: '/catering-icons/box.gif'
-      },
-      {
-        title: "Trusted Across Chicago",
-        description: "Catering in Schaumburg, Naperville, Skokie, and more",
-        icon: '/catering-icons/rating.png'
-      }
-    ],
-    menuItems: [
-      { name: "Mini Kabob Platters", description: "Assorted kabobs perfect for party finger food" },
-      { name: "Biryani Stations", description: "Interactive biryani serving with all accompaniments" },
-      { name: "Chaat Corner", description: "Build-your-own chaat station with various toppings" },
-      { name: "Chicken 65", description: "Spicy fried chicken, a popular Indian appetizer" },
-      { name: "Fish Fry", description: "Crispy fried fish, seasoned with traditional spices" },
-      { name: "Masala Chai", description: "Fragrant spiced tea served with traditional snacks" },
-      { name: "Mango Lassi", description: "Creamy mango yogurt drink, a perfect complement to any meal" },
-      { name: "Gulab Jamun Towers", description: "Impressive dessert display with warm gulab jamun" }
-    ],
-    galleryImages: ['catering/chicken-biryani.png', 'catering/malai-boti.png', 'catering/snacks.png'],
-    ctaTitle: "Plan Your Birthday Feast",
-    ctaText: "Contact us to discuss menu options and pricing for your celebration"
+  title: 'Birthday Catering',
+  heroSubtitle: 'Celebrate your special day with authentic Hyderabadi flavors',
+  heroImage: '/birthday-hero.jpg',
+  introTitle: 'Birthday Catering Services in Skokie – Mehfil Kitchen',
+  introText: 'Looking for birthday catering in Skokie, IL? Mehfil Kitchen offers budget birthday catering packages with authentic Hyderabadi food catering services to make your celebration special. Our birthday catering menus feature Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Chicken-65, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, Shahi Rice, and more. We are known as the best birthday caterer in Skokie IL, providing customized birthday catering, delivery, and affordable catering packages for all ages and occasions. Serving Skokie, Evanston, Lincolnwood, and nearby areas, we bring the taste of Hyderabad to your party.',
+  ctaLink: {
+    
+    url: 'https://mehfilkitchen.com/birthday'
   },
+  linkContent: 'for your birthday catering needs in Skokie today!',
+  introImage: '/birthday-intro.jpg',
+  features: [
+    {
+      title: "Custom Birthday Menus",
+      description: "Choose from our selection or work with our chefs to create a personalized menu",
+      icon: '/catering-icons/cake.gif'
+    },
+    {
+      title: "Theme Coordination",
+      description: "We align our presentation with your party theme for a cohesive experience",
+      icon: '/catering-icons/palette.png'
+    },
+    {
+      title: "Age-Appropriate Options",
+      description: "Special menus for kids, teens, and adult celebrations",
+      icon: '/catering-icons/menu.gif'
+    },
+    {
+      title: "Full Service",
+      description: "Delivery, setup, servers, cleanup",
+      icon: '/catering-icons/box.gif'
+    },
+    {
+      title: "Trusted Across Chicago",
+      description: "Catering in Schaumburg, Naperville, Skokie, and more",
+      icon: '/catering-icons/rating.png'
+    }
+  ],
+  menuItems: [
+    { name: "Mini Kabob Platters", description: "Assorted kabobs perfect for party finger food" },
+    { name: "Biryani Stations", description: "Interactive biryani serving with all accompaniments" },
+    { name: "Chaat Corner", description: "Build-your-own chaat station with various toppings" },
+    { name: "Chicken 65", description: "Spicy fried chicken, a popular Indian appetizer" },
+    { name: "Fish Fry", description: "Crispy fried fish, seasoned with traditional spices" },
+    { name: "Masala Chai", description: "Fragrant spiced tea served with traditional snacks" },
+    { name: "Mango Lassi", description: "Creamy mango yogurt drink, a perfect complement to any meal" },
+    { name: "Gulab Jamun Towers", description: "Impressive dessert display with warm gulab jamun" }
+  ],
+  galleryImages: ['catering/chicken-biryani.png', 'catering/malai-boti.png', 'catering/snacks.png'],
+  ctaTitle: "Plan Your Birthday Feast",
+  ctaText: "Contact us to discuss menu options and pricing for your celebration"
+},
+
   'wedding': {
     title: 'Wedding Catering',
     heroSubtitle: 'Making your special day truly memorable with royal Hyderabadi cuisine',
     heroImage: '/wedding-hero.jpg',
-    introTitle: 'Exquisite Wedding Catering',
-    introText: `Make Your Big Day Memorable with Authentic Hyderabadi Cuisine
-Planning a wedding in Chicago and want to impress your guests with unforgettable Indian food? Our Hyderabadi wedding catering service brings the royal flavors of Hyderabad straight to your celebration. From Dum Biryani to Double Ka Meetha, we specialize in traditional dishes that create a luxury dining experience for your wedding day.
+    introTitle: 'Wedding Catering Services in Skokie, IL – Mehfil Kitchen',
+    introText: `Make your special day unforgettable with Mehfil Kitchen’s wedding catering services in Skokie, IL. We offer affordable wedding catering packages featuring authentic Hyderabadi and Indian wedding catering menus like Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, and Shahi Rice.
+As one of the best wedding caterers in Skokie IL, we provide halal wedding catering, wedding buffet catering, small wedding catering, and luxury wedding dinner catering. We cater to outdoor weddings, receptions, and customized wedding events across Skokie, Evanston, Lincolnwood, and nearby areas.
+
 `,
+ctaLink: {
+    
+    url: 'https://mehfilkitchen.com/wedding'
+  },
+  linkContent: 'Discover top-rated wedding catering services in Skokie IL ',
     introImage: '/wedding-intro.jpg',
     features: [
       {
@@ -146,8 +163,15 @@ Planning a wedding in Chicago and want to impress your guests with unforgettable
     title: 'Party Orders',
     heroSubtitle: 'Flavorful gatherings with our signature party menus',
     heroImage: '/party-hero.jpg',
-    introTitle: 'The Perfect Party Food',
-    introText: 'Looking for mouthwatering Hyderabadi catering in Chicago for your next party or event? We specialize in authentic Hyderabadi cuisine that brings the royal flavors of India to your celebrations. Whether it’s a wedding, birthday, graduation, or corporate event, our catering service ensures your guests enjoy an unforgettable culinary experience.',
+    introTitle: 'Party Catering Services in Skokie, IL – Mehfil Kitchen',
+    introText: `Looking for party catering services in Skokie, IL? Mehfil Kitchen specializes in authentic Hyderabadi and Indian cuisine that brings royal flavors to every celebration. Whether it’s a birthday, wedding, graduation, or corporate event, we offer affordable party catering packages featuring crowd-favorites like Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, and Shahi Rice.
+
+As one of the best halal party caterers in Skokie, we provide tailored options for kids’ parties, small gatherings, outdoor events, and corporate functions. Delivery available across Skokie, Evanston, Lincolnwood, and nearby areas — enjoy a truly unforgettable culinary experience with Mehfil Kitchen.`,
+ctaLink: {
+    
+    url: 'https://mehfilkitchen.com/'
+  },
+  linkContent: 'Choose top-rated party catering in Skokie IL at ',
     introImage: '/party-intro.jpg',
     features: [
       {
@@ -186,8 +210,15 @@ Planning a wedding in Chicago and want to impress your guests with unforgettable
     title: 'Event Catering',
     heroSubtitle: 'Professional catering for corporate and social events',
     heroImage: '/event-hero.jpg',
-    introTitle: 'Impeccable Event Catering',
-    introText: `Looking to add authentic Hyderabadi flavor to your next event in Chicago? Whether it's a wedding, birthday, corporate gathering, or graduation party, Mehfil Kitchen brings the rich taste of Hyderabadi cuisine right to your celebration. We specialize in traditional recipes, royal presentation, and unmatched hospitality.`,
+    introTitle: 'Event Catering Services in Skokie, IL – Mehfil Kitchen',
+    introText: `Looking for event catering in Skokie, IL? Mehfil Kitchen offers affordable event catering packages featuring authentic Hyderabadi and Indian cuisine. Our event catering menu includes Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, and Shahi Rice, perfect for any occasion.
+As one of the best event caterers in Skokie IL, we provide halal event catering, corporate event catering, small and large event catering, outdoor and private event catering, with customized packages to suit your needs. Serving Skokie, Evanston, Lincolnwood, and nearby areas, we ensure top-quality food and service
+.`,
+ctaLink: {
+   
+    url: 'https://mehfilkitchen.com/event'
+  },
+  linkContent: 'Choose top-rated party catering in Skokie IL at ',
     introImage: '/event-intro.jpg',
     features: [
       {
@@ -231,6 +262,11 @@ Planning a wedding in Chicago and want to impress your guests with unforgettable
     heroImage: '/corporate-hero.jpg',
     introTitle: 'Business Dining Solutions',
     introText: 'Spice up your corporate events with the rich and royal flavors of Hyderabadi cuisine! We specialize in Hyderabadi corporate catering in Chicago, offering a unique menu that blends traditional Indian spices with Mughlai finesse — perfect for impressing your clients, colleagues, or employees.',
+    ctaLink: {
+    
+    url: 'https://mehfilkitchen.com/birthday'
+  },
+  linkContent: 'for your birthday catering needs in Skokie today!',
     introImage: '/corporate-intro.jpg',
     features: [
       {
@@ -277,6 +313,11 @@ Planning a wedding in Chicago and want to impress your guests with unforgettable
     introText: `Looking for Delicious Hyderabadi Food On-Demand in Chicago?
 We’ve got you covered with authentic Hyderabadi catering, made fresh and delivered fast — perfect for small parties, family dinners, office lunches, and last-minute events.
 `,
+ctaLink: {
+    
+    url: 'https://mehfilkitchen.com/birthday'
+  },
+  linkContent: 'for your birthday catering needs in Skokie today!',
     introImage: '/ondemand-intro.jpg',
     features: [
       {
@@ -341,12 +382,28 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
       <section className="py-16 px-4 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-semibold text-[#1a3c34] mb-6">
+            <h1 className="text-3xl font-semibold text-[#1a3c34] mb-6">
               {currentService.introTitle}
-            </h2>
+            </h1>
             <p className="text-gray-700 mb-4">
               {currentService.introText}
             </p>
+           {currentService.ctaLink && (
+  <p>
+    Visit{' '}
+    <Link
+      href={currentService.ctaLink.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 underline"
+    >
+      {currentService.ctaLink.url.replace(/^https?:\/\//, '')}
+    </Link>{' '} 
+   {currentService.linkContent}
+  </p>
+)}
+
+
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
             <Image

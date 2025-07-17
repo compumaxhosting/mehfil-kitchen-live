@@ -2,17 +2,17 @@ import React from 'react'
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'Halal Hyderabadi Catering in Skokie | Mehfil Kitchen',
+  title: 'Best Event Catering Services in Skokie, IL | Mehfil Kitchen',
   description:
-    'Authentic halal Hyderabadi food catering in Skokie for weddings, parties, and events. Fresh, flavorful dishes from Mehfil Kitchen.',
+    'Affordable Hyderabadi and Indian event catering in Skokie. Halal, fresh, and flavorful meals for any occasion from Mehfil Kitchen.',
   keywords: [
-    'halal Hyderabadi catering Skokie',
-    'Mehfil Kitchen',
-    'halal food Skokie IL',
-    'Indian catering Skokie',
-    'Hyderabadi biryani catering',
-    'wedding catering Skokie',
-    'party catering halal',
+    'event catering Skokie IL',
+    'Mehfil Kitchen catering',
+    'Hyderabadi catering Skokie',
+    'halal event catering',
+    'Indian food catering',
+    'corporate catering Skokie',
+    'party catering',
   ],
 }
 

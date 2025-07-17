@@ -172,12 +172,13 @@ export default function MenuSection() {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[#1a3c34]">
-                        Our Menu
-                    </h2>
-                    <p className="text-gray-700 text-base max-w-2xl mx-auto">
-                        Explore our rich and authentic Hyderabadi cuisine made with fresh
-                        ingredients and traditional recipes.
+                    <h1 className="text-3xl md:text-4xl font-semibold mb-4 text-[#1a3c34]">
+                        Mehfil Kitchen Menu – Authentic Halal Hyderabadi Food in Skokie, IL
+                    </h1>
+                    <p className="text-gray-700 text-base max-w-4xl mx-auto">
+                        Explore our delicious halal Hyderabadi menu at Mehfil Kitchen in Skokie, IL. We serve Mutton Biryani, Chicken Biryani, Hyderabadi Mutton Dum Biryani, Chicken Reshmi Kabob, Chicken-65, Majestic Chicken, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, Shahi Rice, and Plain Rice. Enjoy our Snack Combo with fresh Samosa, Mirchi, and Chai for the perfect evening treat.
+Visit us for the best Hyderabadi food in Skokie, loved by customers from Evanston, Lincolnwood, Morton Grove, Niles, and nearby areas. Experience authentic flavors and quality halal meals that will keep you coming back.
+
                     </p>
                 </div>
 

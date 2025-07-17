@@ -2,20 +2,19 @@ import React from 'react'
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'Halal Hyderabadi Catering in Skokie | Mehfil Kitchen',
+  title: 'Birthday Catering Skokie IL | Mehfil Kitchen Hyderabadi Food',
   description:
-    'Authentic halal Hyderabadi food catering in Skokie for weddings, parties, and events. Fresh, flavorful dishes from Mehfil Kitchen.',
+    'Best birthday catering in Skokie IL with Hyderabadi dishes. Affordable packages by Mehfil Kitchen for all celebrations.',
   keywords: [
-    'halal Hyderabadi catering Skokie',
-    'Mehfil Kitchen',
-    'halal food Skokie IL',
-    'Indian catering Skokie',
-    'Hyderabadi biryani catering',
-    'wedding catering Skokie',
-    'party catering halal',
+    'birthday catering Skokie IL',
+    'best birthday caterer Skokie',
+    'Hyderabadi catering Skokie',
+    'affordable birthday catering Skokie',
+    'Mehfil Kitchen catering',
+    'Skokie party catering',
+    'Indian food catering Skokie'
   ],
 }
-
 
 const schema = {
   "@context": "https://schema.org",
@@ -58,11 +57,11 @@ const schema = {
   ]
 }
 
-export default function CateringLayout({ children }: { children: React.ReactNode }) {
+export default function ContactLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Script
-        id="catering-schema"
+        id="contact-schema"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

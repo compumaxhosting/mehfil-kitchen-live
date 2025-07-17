@@ -2,22 +2,20 @@ import React from 'react'
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'Authentic Indian & Hyderabadi Menu in Skokie | Mehfil Kitchen',
+  title: 'Mehfil Kitchen Menu | Halal Hyderabadi Food in Skokie',
   description:
-    "Explore Mehfil Kitchen's menu featuring Hyderabadi biryanis, flavorful kebabs, and classic Indian dishes in Skokie, IL. Perfect for dine-in or catering.",
+    "Explore Mehfil Kitchen's halal Hyderabadi menu in Skokie. Enjoy biryani, kabobs, snacks, and more made with authentic flavors and fresh ingredients.",
   keywords: [
-    'Indian restaurant Skokie',
-    'Hyderabadi Biryani Skokie',
-    'Chicken Biryani near me',
-    'Mutton Biryani delivery',
-    'Hyderabadi Dum Biryani',
-    'Chicken Reshmi Kabob Skokie',
-    'Indian kebabs Skokie',
-    'Butter Chicken Skokie',
-    'Best Indian food Skokie',
-    'Skokie Indian catering',
+    'Mehfil Kitchen menu',
+    'Hyderabadi food Skokie',
+    'halal food Skokie IL',
+    'Mutton Biryani Skokie',
+    'Indian snacks Skokie',
+    'Chicken Reshmi Kabob',
+    'halal Hyderabadi cuisine',
   ],
 }
+
 
 const schema = {
   "@context": "https://schema.org",
