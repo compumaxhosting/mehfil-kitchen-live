@@ -7,29 +7,40 @@ export default function AboutSection() {
 
                 {/* Left Content */}
                 <div className="md:w-1/2 text-left">
-                    <h2 className="text-[33px] sm:text-[36px] text-center font-semibold mb-6 text-gray-800">
-                        About Mehfil Kitchen
-                       
-                    </h2>
-                    <div className="text-[16px] text-gray-700 space-y-2 leading-relaxed">
+                    <h1 className="text-[28px] sm:text-[32px] text-center font-bold mb-6 text-gray-800 leading-tight">
+                        About Us – Mehfil Kitchen, Skokie, IL
+                    </h1>
+                    <div className="text-[16px] text-gray-700 space-y-4 leading-relaxed">
                         <p>
-                            At Mehfil Kitchen we offer meals of excellent quality and invite you to try our delicious food.
+                            Welcome to Mehfil Kitchen, your destination for authentic Hyderabadi cuisine in Skokie, IL.
+                            Born from a passion to share the true taste of Hyderabad with the community, we bring you
+                            dishes that celebrate rich traditions and bold flavors.
                         </p>
                         <p>
-                            The key to our success is simple: providing quality consistent food that taste great every single time.
-                            We pride ourselves on serving our customers delicious genuine dishes like: Indian Biryani, Kebabs, and more.
+                            Our menu features signature items like Mutton Biryani, Chicken Biryani, Hyderabadi Mutton Dum Biryani,
+                            Chicken-65, Majestic Chicken, Chicken Reshmi Kabob, Kalimirchi Beef, and Mehfil Fish Fry. Every dish
+                            is prepared with handpicked spices and fresh halal ingredients, ensuring an experience that warms
+                            your heart and satisfies your soul.
                         </p>
                         <p>
-                            Eat delicious food. Grab a drink. But most of all, relax! We thank you from the bottom of our hearts for your continued support
+                            At Mehfil Kitchen, we believe food is not just about taste but about connection and celebration.
+                            That is why we also offer catering services for all occasions, delivering authentic halal Hyderabadi
+                            cuisine to weddings, parties, corporate events, and family gatherings with care and elegance.
+                        </p>
+                        <p>
+                            We proudly serve Skokie, Evanston, Niles, Morton Grove, Lincolnwood, and surrounding Chicago North
+                            suburbs. Whether you dine in or order catering, you will feel the warmth of our hospitality and
+                            the unmatched flavors of Hyderabad in every bite.
+                        </p>
+                        <p>
+                            Visit us today and let Mehfil Kitchen be part of your everyday meals and special moments.
                         </p>
                     </div>
                 </div>
 
-
-
                 {/* Right Image with Rotation */}
                 <div className="md:w-1/2 flex justify-center items-center overflow-hidden">
-                    <div className="w-72 sm:w-72 md:w-[400px] aspect-square  overflow-hidden relative animate-[spin_20s_linear_infinite]">
+                    <div className="w-72 sm:w-72 md:w-[400px] aspect-square overflow-hidden relative animate-[spin_20s_linear_infinite]">
                         <Image
                             src="/about.png"
                             alt="About Mehfil"
@@ -38,7 +49,6 @@ export default function AboutSection() {
                         />
                     </div>
                 </div>
-
 
             </div>
         </section>

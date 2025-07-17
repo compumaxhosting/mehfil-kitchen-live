@@ -2,22 +2,20 @@
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'Best Hyderabadi Biryani & Catering in Skokie | Mehfil Kitchen',
+  title: 'Hyderabadi Cuisine Dine and Catering | Mehfil Kitchen, Skokie, IL',
   description:
-    'Enjoy the best Hyderabadi Biryani, kebabs & catering in Skokie, IL. Order delivery or catering for events like birthdays, weddings, and corporate meals!',
+    'Welcome to Mehfil Kitchen, your destination for authentic Hyderabadi cuisine in Skokie, IL. Born from a passion to share the true taste of Hyderabad with the community, we bring you dishes that celebrate rich traditions and bold flavors.',
   keywords: [
-    'Mutton Biryani Skokie IL',
-    'Best Chicken Biryani near Skokie',
-    'Hyderabadi Mutton Dum Biryani delivery',
-    'Chicken Reshmi Kabob Skokie',
-    'Event Catering Skokie',
-    'Halal Mutton Biryani Skokie',
-    'Chicken Malai Boti Skokie IL',
-    'Corporate Meals Skokie',
-    'Indian Catering Niles IL',
-    'Mehfil Kitchen Catering',
+    'Mehfil Kitchen',
+    'Hyderabadi cuisine',
+    'Skokie',
+    'Mutton Biryani',
+    'Chicken Biryani',
+    'Catering',
+    'Hyderabadi biryani near me'
   ],
 }
+
 
 const schema = {
   "@context": "https://schema.org",
