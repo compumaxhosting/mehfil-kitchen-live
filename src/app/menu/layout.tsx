@@ -1,5 +1,5 @@
-import React from 'react'
-import Script from 'next/script'
+import React from 'react';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Mehfil Kitchen Menu | Halal Hyderabadi Food in Skokie',
@@ -14,8 +14,7 @@ export const metadata = {
     'Chicken Reshmi Kabob',
     'halal Hyderabadi cuisine',
   ],
-}
-
+};
 
 const schema = {
   "@context": "https://schema.org",
@@ -56,7 +55,7 @@ const schema = {
     "https://www.facebook.com/mehfilkitchen/",
     "https://www.instagram.com/kitchen.mehfil/?igsh=ejNmNzJkbG56bmxj#/"
   ]
-}
+};
 
 export default function MenuLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -69,5 +68,5 @@ export default function MenuLayout({ children }: { children: React.ReactNode }) 
       />
       {children}
     </>
-  )
+  );
 }

@@ -164,9 +164,9 @@ ctaLink: {
     heroSubtitle: 'Flavorful gatherings with our signature party menus',
     heroImage: '/party-hero.jpg',
     introTitle: 'Party Catering Services in Skokie, IL – Mehfil Kitchen',
-    introText: `Looking for party catering services in Skokie, IL? Mehfil Kitchen specializes in authentic Hyderabadi and Indian cuisine that brings royal flavors to every celebration. Whether it’s a birthday, wedding, graduation, or corporate event, we offer affordable party catering packages featuring crowd-favorites like Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, and Shahi Rice.
-
-As one of the best halal party caterers in Skokie, we provide tailored options for kids’ parties, small gatherings, outdoor events, and corporate functions. Delivery available across Skokie, Evanston, Lincolnwood, and nearby areas — enjoy a truly unforgettable culinary experience with Mehfil Kitchen.`,
+    introText: `Looking for party catering services in Skokie, IL? Mehfil Kitchen offers affordable party catering packages with authentic Hyderabadi and Indian food. Our party catering menu includes Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, and Shahi Rice, perfect for any celebration.
+We are known as one of the best party caterers in Skokie IL, providing halal party catering, kids party catering, small party catering, outdoor party catering, and corporate party catering with delivery options. Enjoy customized party catering for home gatherings and events across Skokie, Evanston, Lincolnwood, and nearby areas.
+`,
 ctaLink: {
     
     url: 'https://mehfilkitchen.com/'

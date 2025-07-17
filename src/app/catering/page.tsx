@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
-import Services from "@/components/Services";
 import { Footer } from "@/components/Footer";
 import CateringForm from "@/components/CateringForm";
 import BackToTop from "@/components/BackToTop";
+import CateringServicesSection from "@/components/CateringServicesSection";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-full h-[20px] bg-[url('/zigzag.svg')] bg-cover bg-no-repeat z-[1] rotate-180" />
       </div>
     </section>
-      <Services />
+    <CateringServicesSection />
       <CateringForm/>
       <Footer />
       <BackToTop/>
