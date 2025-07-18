@@ -11,25 +11,25 @@ const services = [
         title: 'Birthday Catering',
         desc: 'Celebrate birthdays with rich flavors from our menu – from kabobs to biryanis, curated to impress every guest.',
         icon: <GoGift />,
-        link: '/birthday'
+        link: '/catering-services-for-birthday-party-near-me'
     },
     {
         title: 'Wedding Catering',
         desc: 'Make your special day memorable with signature Hyderabadi dishes served fresh with elegance and authenticity.',
         icon: <HiOutlineCake />,
-        link: '/wedding'
+        link: '/wedding-catering-near-me-in-skokie-il'
     },
     {
         title: 'Party Orders',
         desc: 'Host flavorful parties with our customized menus featuring Chicken 65, Kalimirchi Beef, and more crowd favorites.',
         icon: <LuPartyPopper />,
-        link: '/party'
+        link: '/party-catering-services-skokie-Illinois'
     },
     {
         title: 'Event Catering',
         desc: 'From intimate events to large gatherings, we provide flexible catering solutions with consistent quality and taste.',
         icon: <BiCalendarEvent />,
-        link: '/event'
+        link: '/event-catering-in-skokie-il'
     },
     {
         title: 'Corporate Meals',

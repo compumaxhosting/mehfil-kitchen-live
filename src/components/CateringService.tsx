@@ -29,7 +29,6 @@ interface ServiceData {
   ctaText: string;
   linkContent: string;
   ctaLink?: {
-   
     url: string;
   };
 }
@@ -40,58 +39,58 @@ interface ServicePageProps {
 
 const serviceData: Record<ServiceKey, ServiceData> = {
   'birthday': {
-  title: 'Birthday Catering',
-  heroSubtitle: 'Celebrate your special day with authentic Hyderabadi flavors',
-  heroImage: '/birthday-hero.jpg',
-  introTitle: 'Birthday Catering Services in Skokie – Mehfil Kitchen',
-  introText: 'Looking for birthday catering in Skokie, IL? Mehfil Kitchen offers budget birthday catering packages with authentic Hyderabadi food catering services to make your celebration special. Our birthday catering menus feature Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Chicken-65, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, Shahi Rice, and more. We are known as the best birthday caterer in Skokie IL, providing customized birthday catering, delivery, and affordable catering packages for all ages and occasions. Serving Skokie, Evanston, Lincolnwood, and nearby areas, we bring the taste of Hyderabad to your party.',
-  ctaLink: {
-    
-    url: 'https://mehfilkitchen.com/birthday'
+    title: 'Birthday Catering',
+    heroSubtitle: 'Celebrate your special day with authentic Hyderabadi flavors',
+    heroImage: '/birthday-hero.jpg',
+    introTitle: 'Birthday Catering Services in Skokie – Mehfil Kitchen',
+    introText: 'Looking for birthday catering in Skokie, IL? Mehfil Kitchen offers budget birthday catering packages with authentic Hyderabadi food catering services to make your celebration special. Our birthday catering menus feature Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Chicken-65, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, Shahi Rice, and more. We are known as the best birthday caterer in Skokie IL, providing customized birthday catering, delivery, and affordable catering packages for all ages and occasions. Serving Skokie, Evanston, Lincolnwood, and nearby areas, we bring the taste of Hyderabad to your party.',
+    ctaLink: {
+
+      url: 'https://mehfilkitchen.com/birthday'
+    },
+    linkContent: 'for your birthday catering needs in Skokie today!',
+    introImage: '/birthday-intro.jpg',
+    features: [
+      {
+        title: "Custom Birthday Menus",
+        description: "Choose from our selection or work with our chefs to create a personalized menu",
+        icon: '/catering-icons/cake.gif'
+      },
+      {
+        title: "Theme Coordination",
+        description: "We align our presentation with your party theme for a cohesive experience",
+        icon: '/catering-icons/palette.png'
+      },
+      {
+        title: "Age-Appropriate Options",
+        description: "Special menus for kids, teens, and adult celebrations",
+        icon: '/catering-icons/menu.gif'
+      },
+      {
+        title: "Full Service",
+        description: "Delivery, setup, servers, cleanup",
+        icon: '/catering-icons/box.gif'
+      },
+      {
+        title: "Trusted Across Chicago",
+        description: "Catering in Schaumburg, Naperville, Skokie, and more",
+        icon: '/catering-icons/rating.png'
+      }
+    ],
+    menuItems: [
+      { name: "Mini Kabob Platters", description: "Assorted kabobs perfect for party finger food" },
+      { name: "Biryani Stations", description: "Interactive biryani serving with all accompaniments" },
+      { name: "Chaat Corner", description: "Build-your-own chaat station with various toppings" },
+      { name: "Chicken 65", description: "Spicy fried chicken, a popular Indian appetizer" },
+      { name: "Fish Fry", description: "Crispy fried fish, seasoned with traditional spices" },
+      { name: "Masala Chai", description: "Fragrant spiced tea served with traditional snacks" },
+      { name: "Mango Lassi", description: "Creamy mango yogurt drink, a perfect complement to any meal" },
+      { name: "Gulab Jamun Towers", description: "Impressive dessert display with warm gulab jamun" }
+    ],
+    galleryImages: ['catering/chicken-biryani.png', 'catering/malai-boti.png', 'catering/snacks.png'],
+    ctaTitle: "Plan Your Birthday Feast",
+    ctaText: "Contact us to discuss menu options and pricing for your celebration"
   },
-  linkContent: 'for your birthday catering needs in Skokie today!',
-  introImage: '/birthday-intro.jpg',
-  features: [
-    {
-      title: "Custom Birthday Menus",
-      description: "Choose from our selection or work with our chefs to create a personalized menu",
-      icon: '/catering-icons/cake.gif'
-    },
-    {
-      title: "Theme Coordination",
-      description: "We align our presentation with your party theme for a cohesive experience",
-      icon: '/catering-icons/palette.png'
-    },
-    {
-      title: "Age-Appropriate Options",
-      description: "Special menus for kids, teens, and adult celebrations",
-      icon: '/catering-icons/menu.gif'
-    },
-    {
-      title: "Full Service",
-      description: "Delivery, setup, servers, cleanup",
-      icon: '/catering-icons/box.gif'
-    },
-    {
-      title: "Trusted Across Chicago",
-      description: "Catering in Schaumburg, Naperville, Skokie, and more",
-      icon: '/catering-icons/rating.png'
-    }
-  ],
-  menuItems: [
-    { name: "Mini Kabob Platters", description: "Assorted kabobs perfect for party finger food" },
-    { name: "Biryani Stations", description: "Interactive biryani serving with all accompaniments" },
-    { name: "Chaat Corner", description: "Build-your-own chaat station with various toppings" },
-    { name: "Chicken 65", description: "Spicy fried chicken, a popular Indian appetizer" },
-    { name: "Fish Fry", description: "Crispy fried fish, seasoned with traditional spices" },
-    { name: "Masala Chai", description: "Fragrant spiced tea served with traditional snacks" },
-    { name: "Mango Lassi", description: "Creamy mango yogurt drink, a perfect complement to any meal" },
-    { name: "Gulab Jamun Towers", description: "Impressive dessert display with warm gulab jamun" }
-  ],
-  galleryImages: ['catering/chicken-biryani.png', 'catering/malai-boti.png', 'catering/snacks.png'],
-  ctaTitle: "Plan Your Birthday Feast",
-  ctaText: "Contact us to discuss menu options and pricing for your celebration"
-},
 
   'wedding': {
     title: 'Wedding Catering',
@@ -102,11 +101,11 @@ const serviceData: Record<ServiceKey, ServiceData> = {
 As one of the best wedding caterers in Skokie IL, we provide halal wedding catering, wedding buffet catering, small wedding catering, and luxury wedding dinner catering. We cater to outdoor weddings, receptions, and customized wedding events across Skokie, Evanston, Lincolnwood, and nearby areas.
 
 `,
-ctaLink: {
-    
-    url: 'https://mehfilkitchen.com/wedding'
-  },
-  linkContent: 'Discover top-rated wedding catering services in Skokie IL ',
+    ctaLink: {
+
+      url: 'https://mehfilkitchen.com/wedding'
+    },
+    linkContent: 'Discover top-rated wedding catering services in Skokie IL ',
     introImage: '/wedding-intro.jpg',
     features: [
       {
@@ -167,11 +166,11 @@ ctaLink: {
     introText: `Looking for party catering services in Skokie, IL? Mehfil Kitchen offers affordable party catering packages with authentic Hyderabadi and Indian food. Our party catering menu includes Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, and Shahi Rice, perfect for any celebration.
 We are known as one of the best party caterers in Skokie IL, providing halal party catering, kids party catering, small party catering, outdoor party catering, and corporate party catering with delivery options. Enjoy customized party catering for home gatherings and events across Skokie, Evanston, Lincolnwood, and nearby areas.
 `,
-ctaLink: {
-    
-    url: 'https://mehfilkitchen.com/'
-  },
-  linkContent: 'Choose top-rated party catering in Skokie IL at ',
+    ctaLink: {
+
+      url: 'https://mehfilkitchen.com'
+    },
+    linkContent: 'Choose top-rated party catering in Skokie IL',
     introImage: '/party-intro.jpg',
     features: [
       {
@@ -214,11 +213,11 @@ ctaLink: {
     introText: `Looking for event catering in Skokie, IL? Mehfil Kitchen offers affordable event catering packages featuring authentic Hyderabadi and Indian cuisine. Our event catering menu includes Mutton Biryani, Chicken Biryani, Hyderabadi Dum Biryani, Chicken Reshmi Kabob, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, and Shahi Rice, perfect for any occasion.
 As one of the best event caterers in Skokie IL, we provide halal event catering, corporate event catering, small and large event catering, outdoor and private event catering, with customized packages to suit your needs. Serving Skokie, Evanston, Lincolnwood, and nearby areas, we ensure top-quality food and service
 .`,
-ctaLink: {
-   
-    url: 'https://mehfilkitchen.com/event'
-  },
-  linkContent: 'Choose top-rated party catering in Skokie IL at ',
+    ctaLink: {
+
+      url: 'https://mehfilkitchen.com/event'
+    },
+    linkContent: 'Choose top-rated party catering in Skokie IL at ',
     introImage: '/event-intro.jpg',
     features: [
       {
@@ -263,10 +262,10 @@ ctaLink: {
     introTitle: 'Business Dining Solutions',
     introText: 'Spice up your corporate events with the rich and royal flavors of Hyderabadi cuisine! We specialize in Hyderabadi corporate catering in Chicago, offering a unique menu that blends traditional Indian spices with Mughlai finesse — perfect for impressing your clients, colleagues, or employees.',
     ctaLink: {
-    
-    url: 'https://mehfilkitchen.com/birthday'
-  },
-  linkContent: 'for your birthday catering needs in Skokie today!',
+
+      url: 'https://mehfilkitchen.com/birthday'
+    },
+    linkContent: 'for your birthday catering needs in Skokie today!',
     introImage: '/corporate-intro.jpg',
     features: [
       {
@@ -313,11 +312,11 @@ ctaLink: {
     introText: `Looking for Delicious Hyderabadi Food On-Demand in Chicago?
 We’ve got you covered with authentic Hyderabadi catering, made fresh and delivered fast — perfect for small parties, family dinners, office lunches, and last-minute events.
 `,
-ctaLink: {
-    
-    url: 'https://mehfilkitchen.com/birthday'
-  },
-  linkContent: 'for your birthday catering needs in Skokie today!',
+    ctaLink: {
+
+      url: 'https://mehfilkitchen.com/birthday'
+    },
+    linkContent: 'for your birthday catering needs in Skokie today!',
     introImage: '/ondemand-intro.jpg',
     features: [
       {
@@ -388,20 +387,20 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
             <p className="text-gray-700 mb-4">
               {currentService.introText}
             </p>
-           {currentService.ctaLink && (
-  <p>
-    Visit{' '}
-    <Link
-      href={currentService.ctaLink.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-600 underline"
-    >
-      {currentService.ctaLink.url.replace(/^https?:\/\//, '')}
-    </Link>{' '} 
-   {currentService.linkContent}
-  </p>
-)}
+            {currentService.ctaLink && (
+              <p>
+                Visit{' '}
+                <Link
+                  href={currentService.ctaLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 underline"
+                >
+                  {currentService.ctaLink.url.replace(/^https?:\/\//, '')}
+                </Link>{' '}
+                {currentService.linkContent}
+              </p>
+            )}
 
 
           </div>
@@ -468,29 +467,29 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-semibold text-[#1a3c34] mb-12 text-center">
-        {currentService.title} Gallery
+            {currentService.title} Gallery
           </h2>
 
           {/* Keep original grid structure but adjust for 3 images */}
           <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 max-w-6xl mx-auto">
-        {currentService.galleryImages.map((image, index) => (
-          <div key={index} className="relative aspect-square rounded-lg overflow-hidden group">
-            <Image
-          src={`/${image}`}
-          alt={`${currentService.title} example ${index + 1}`}
-          fill
-          className="object-cover transition-transform group-hover:scale-105"
-            />
-          </div>
-        ))}
+            {currentService.galleryImages.map((image, index) => (
+              <div key={index} className="relative aspect-square rounded-lg overflow-hidden group">
+                <Image
+                  src={`/${image}`}
+                  alt={`${currentService.title} example ${index + 1}`}
+                  fill
+                  className="object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
+            ))}
           </div>
 
           <div className="flex justify-center mt-10">
-        <Link href="/gallery">
-          <button className="bg-[#1a3c34] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#122822] transition-colors">
-            Explore Gallery
-          </button>
-        </Link>
+            <Link href="/gallery">
+              <button className="bg-[#1a3c34] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#122822] transition-colors">
+                Explore Gallery
+              </button>
+            </Link>
           </div>
         </div>
       </section>
