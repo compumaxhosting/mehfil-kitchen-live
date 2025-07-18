@@ -126,12 +126,12 @@ export default function Navbar() {
           </div>
 
           {/* DoorDash Logo */}
-          <a href="https://www.doordash.com" target="_blank">
+          <a href="https://www.doordash.com/store/mehfil-kitchen-skokie-33915289/" target="_blank">
             <Image src="/doordash.png" alt="DoorDash" width={80} height={40} />
           </a>
 
           {/* Uber Eats Logo */}
-          <a href="https://www.ubereats.com" target="_blank">
+          <a href="https://www.ubereats.com/store/mehfil-kitchen/RpxFaKXDRC6WeTay-6Iqhw" target="_blank">
             <Image
               src="/ubereats.jpeg"
               alt="Uber Eats"
