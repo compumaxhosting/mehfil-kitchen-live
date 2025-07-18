@@ -23,7 +23,7 @@ export const BottomMenu = () => {
 
       {/* Catering */}
     <Link
-      href="/catering"
+      href="/halal-hyderabadi-catering-skokie-il"
       className="flex flex-col items-center text-xs"
     >
       {/* Elegant cloche/serving tray SVG icon for catering */}

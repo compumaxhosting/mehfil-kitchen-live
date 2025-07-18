@@ -64,12 +64,12 @@ export const Footer = () => {
                             </h2>
                             <div className="text-white text-sm space-y-2">
                                 <div>
-                                    5264 Lincoln Ave,
+                                    5264 Lincoln Ave,<br />
                                     Skokie IL 60077
                                 </div>
                                 <div>
                                     <span className="font-semibold">Tel: </span>
-                                    <a href="tel:+1 786-763-4000" className="hover:underline">
+                                    <a href="tel:+17867634000" className="hover:underline">
                                         +1 786-763-4000
                                     </a>
                                 </div>
@@ -84,6 +84,7 @@ export const Footer = () => {
                                 </div>
                             </div>
                         </div>
+
 
                         {/* FOR REGULAR ORDERS */}
                         <div className="w-full md:w-1/4 px-2">
