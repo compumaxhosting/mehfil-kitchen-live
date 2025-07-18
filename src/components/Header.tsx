@@ -19,10 +19,10 @@ export default function Navbar() {
   }, []);
 
   const cateringItems = [
-    { name: 'Birthday Catering', href: '/birthday' },
-    { name: 'Wedding Catering', href: '/wedding' },
+    { name: 'Birthday Catering', href: '/catering-services-for-birthday-party-near-me' },
+    { name: 'Wedding Catering', href: '/wedding-catering-near-me-in-skokie-il' },
     { name: 'Party Orders', href: '/party' },
-    { name: 'Event Catering', href: '/event' },
+    { name: 'Event Catering', href: '/event-catering-in-skokie-il' },
     { name: 'Corporate Meals', href: '/corporate' },
     { name: 'On-Demand Orders', href: '/ondemand' },
   ];
@@ -43,7 +43,7 @@ export default function Navbar() {
 
         {/* Left Links */}
         <div className="hidden lg:flex gap-36 text-white items-center">
-          {['Home', 'About', 'Menu'].map((text) => (
+          {['Home', 'About', 'Menu',].map((text) => (
             <Link
               key={text}
               href={text === 'Home' ? '/' : `/${text.toLowerCase()}`}
@@ -80,7 +80,7 @@ export default function Navbar() {
             onMouseEnter={() => setCateringDropdownOpen(true)}
             onMouseLeave={() => setCateringDropdownOpen(false)}
           >
-            <Link href="/catering" className="relative group">
+            <Link href="/halal-hyderabadi-catering-skokie-il" className="relative group">
               <span className="text-white flex flex-col items-center">
                 <span className="flex items-center gap-1">
                   Catering
@@ -115,6 +115,7 @@ export default function Navbar() {
               <span className="absolute left-1/2 top-full mt-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0" />
             </span>
           </Link>
+          
         </div>
 
         {/* Hamburger Button */}

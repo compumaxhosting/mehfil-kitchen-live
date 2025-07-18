@@ -37,10 +37,16 @@ export const Footer = () => {
                                 <Link href="/gallery">Gallery</Link>
                             </li>
                             <li>
-                                <Link href="/catering">Catering</Link>
+                                <Link href="/halal-hyderabadi-catering-skokie-il">Catering</Link>
                             </li>
                             <li>
                                 <Link href="/contact">Contact</Link>
+                            </li>
+                            <li>
+                                <Link href="/contact">Uber Eats</Link>
+                            </li>
+                            <li>
+                                <Link href="/contact">Door Dash</Link>
                             </li>
                         </ul>
                     </div>
