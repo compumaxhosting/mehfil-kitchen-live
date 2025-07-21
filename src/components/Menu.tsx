@@ -12,7 +12,7 @@ export default function MenuSection() {
     const filteredItems = menuItems.filter(item =>
         item.categories.includes(activeFilter)
     );
-    
+
 
     return (
         <section className="w-full py-16 px-4">
@@ -24,7 +24,7 @@ export default function MenuSection() {
                     </h1>
                     <p className="text-gray-700 text-base max-w-4xl mx-auto">
                         Explore our delicious halal Hyderabadi menu at Mehfil Kitchen in Skokie, IL. We serve Mutton Biryani, Chicken Biryani, Hyderabadi Mutton Dum Biryani, Chicken Reshmi Kabob, Chicken-65, Majestic Chicken, Butter Chicken, Kalimirchi Beef, Mehfil Fish Fry, Shahi Rice, and Plain Rice. Enjoy our Snack Combo with fresh Samosa, Mirchi, and Chai for the perfect evening treat.
-                    Visit us for the best Hyderabadi food in Skokie, loved by customers from Evanston, Lincolnwood, Morton Grove, Niles, and nearby areas. Experience authentic flavors and quality halal meals that will keep you coming back.
+                        Visit us for the best Hyderabadi food in Skokie, loved by customers from Evanston, Lincolnwood, Morton Grove, Niles, and nearby areas. Experience authentic flavors and quality halal meals that will keep you coming back.
 
                     </p>
                 </div>
@@ -79,6 +79,8 @@ export default function MenuSection() {
                                             alt={item.title}
                                             width={380}
                                             height={373}
+                                            quality={95}
+                                            priority={true} // For above-the-fold images
                                             className="w-full h-auto max-w-[380px] rounded-[5%] object-cover"
                                         />
                                         <div className="absolute bottom-6 right-6 bg-white text-black font-semibold px-3 py-2 md:px-4 md:py-2 rounded shadow text-sm md:text-base">
