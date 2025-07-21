@@ -11,10 +11,11 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
       <div className="relative h-[70vh] min-h-[500px] w-full">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image
-          src={currentService.heroImage}
+          src={currentService.heroImage} 
           alt={currentService.title}
           fill
           className="object-cover"
+          quality={95} 
           priority
         />
         <div className="relative z-20 h-full flex flex-col justify-center items-center text-center px-4">
