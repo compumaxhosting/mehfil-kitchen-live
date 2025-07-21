@@ -70,8 +70,8 @@ export default function Navbar() {
               alt="Logo"
               width={120}
               height={60}
-              priority
-              quality={100}
+              quality={95}
+              priority={true} // For above-the-fold images
             />
           </Link>
         </div>
@@ -104,8 +104,8 @@ export default function Navbar() {
             {/* Dropdown */}
             <div
               className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${cateringDropdownOpen
-                  ? "opacity-100 visible translate-y-0"
-                  : "opacity-0 invisible translate-y-2"
+                ? "opacity-100 visible translate-y-0"
+                : "opacity-0 invisible translate-y-2"
                 }`}
             >
               <div className="py-2 w-48">
@@ -187,8 +187,8 @@ export default function Navbar() {
 
             <div
               className={`overflow-hidden transition-all duration-300 ${cateringDropdownOpen
-                  ? "max-h-64 opacity-100"
-                  : "max-h-0 opacity-0"
+                ? "max-h-64 opacity-100"
+                : "max-h-0 opacity-0"
                 }`}
             >
               <div className="pl-4 py-2 space-y-1">

@@ -19,6 +19,8 @@ export const Footer = () => {
                                     alt="Mehfil Kitchen Logo"
                                     width={100}
                                     height={150}
+                                    quality={95}
+                                    priority={true} // For above-the-fold images
                                 />
                             </div>
                             <p className="text-sm text-white">
@@ -70,7 +72,7 @@ export const Footer = () => {
                                 <div>
                                     <span className="font-semibold">Tel: </span>
                                     <a href="tel:+17867634000" className="hover:underline">
-                                         786-763-4000
+                                        786-763-4000
                                     </a>
                                 </div>
                                 <div>
