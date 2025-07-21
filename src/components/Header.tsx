@@ -35,9 +35,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? "bg-[#1a3c34]" : "bg-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${scrolled ? "bg-[#1a3c34]" : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-5 py-1 md:py-2">
         {/* Mobile Logo */}
@@ -78,7 +77,7 @@ export default function Navbar() {
         </div>
 
         {/* Right links (Desktop) */}
-        <div className="hidden lg:flex gap-14 text-white items-center">
+        <div className="hidden lg:flex gap-8 text-white items-center">
           {/* Catering Dropdown */}
           <div
             className="relative group"
@@ -94,9 +93,8 @@ export default function Navbar() {
                   Catering
                   <ChevronDown
                     size={16}
-                    className={`transition-transform duration-200 ${
-                      cateringDropdownOpen ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform duration-200 ${cateringDropdownOpen ? "rotate-180" : ""
+                      }`}
                   />
                 </span>
                 <span className="absolute left-1/2 top-full mt-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0" />
@@ -105,11 +103,10 @@ export default function Navbar() {
 
             {/* Dropdown */}
             <div
-              className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${
-                cateringDropdownOpen
+              className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${cateringDropdownOpen
                   ? "opacity-100 visible translate-y-0"
                   : "opacity-0 invisible translate-y-2"
-              }`}
+                }`}
             >
               <div className="py-2 w-48">
                 {cateringItems.map((item) => (
@@ -160,9 +157,8 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out bg-white ${
-          menuOpen ? "max-h-[500px]" : "max-h-0"
-        }`}
+        className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out bg-white ${menuOpen ? "max-h-[500px]" : "max-h-0"
+          }`}
       >
         <div className="px-6 py-4 text-black space-y-2">
           {["Home", "About", "Menu", "Gallery"].map((text) => (
@@ -184,18 +180,16 @@ export default function Navbar() {
               <span>Catering</span>
               <ChevronDown
                 size={16}
-                className={`transition-transform duration-200 ${
-                  cateringDropdownOpen ? "rotate-180" : ""
-                }`}
+                className={`transition-transform duration-200 ${cateringDropdownOpen ? "rotate-180" : ""
+                  }`}
               />
             </button>
 
             <div
-              className={`overflow-hidden transition-all duration-300 ${
-                cateringDropdownOpen
+              className={`overflow-hidden transition-all duration-300 ${cateringDropdownOpen
                   ? "max-h-64 opacity-100"
                   : "max-h-0 opacity-0"
-              }`}
+                }`}
             >
               <div className="pl-4 py-2 space-y-1">
                 <Link

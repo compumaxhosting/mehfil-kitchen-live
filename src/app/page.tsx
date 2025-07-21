@@ -11,14 +11,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      
+
       <HeroSection />
       <AboutHyderabadiFlavorsSection />
       <Services />
       <Menu />
       <Testimonials />
       <Footer />
-      <BackToTop/>
+      <BackToTop />
     </>
   );
 }
