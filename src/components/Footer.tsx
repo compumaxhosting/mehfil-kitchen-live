@@ -84,6 +84,12 @@ export const Footer = () => {
                                         info@mehfilkitchen.com
                                     </a>
                                 </div>
+                                <div>
+                                    <span className="font-semibold">Hours: </span>
+                                    <div>
+                                        Mon-Sun: 9:30 AM - 11:00 PM
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
