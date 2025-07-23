@@ -96,7 +96,7 @@ export const serviceData: Record<ServiceKey, ServiceData> = {
   'wedding': {
     title: 'Wedding Catering',
     heroSubtitle: 'Making your special day truly memorable with royal Hyderabadi cuisine',
-    heroImage: '/wedding-hero.jpg',
+    heroImage: '/wedding-hero.webp',
     introTitle: 'Wedding Catering Services in Skokie, IL – Mehfil Kitchen',
     introParagraphs: [
       "Make your special day unforgettable with Mehfil Kitchen's wedding catering services in Skokie, IL.",
