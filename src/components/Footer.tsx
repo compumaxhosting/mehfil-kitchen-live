@@ -128,6 +128,9 @@ export const Footer = () => {
                                     />
                                 </a>
                             </div>
+                            <div className="text-white pt-2">
+                                Mon-Sun: 9:30 AM - 11:00 PM
+                            </div>
                         </div>
                     </div>
                 </div>
