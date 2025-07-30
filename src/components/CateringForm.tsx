@@ -205,7 +205,7 @@ export default function CateringForm() {
                                     </div>
                                     <div>
                                         <h4 className="font-medium text-[#1a3c34]">Phone</h4>
-                                        <a href="tel:+17867634000" className="text-gray-600 hover:underline">+1 786-763-4000</a>
+                                        <a href="tel:7867634000" className="text-gray-600 hover:underline"> 786-763-4000</a>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
@@ -214,7 +214,7 @@ export default function CateringForm() {
                                     </div>
                                     <div>
                                         <h4 className="font-medium text-[#1a3c34]">Email</h4>
-                                        <a href="mailto:info@mehfilkitchen.com" className="text-gray-600 hover:underline">info@mehfilkitchen.com</a>
+                                        <a href="mailto:hayatmehfil@gmail.com" className="text-gray-600 hover:underline">hayatmehfil@gmail.com</a>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">

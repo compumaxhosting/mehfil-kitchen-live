@@ -78,10 +78,10 @@ export const Footer = () => {
                                 <div>
                                     <span className="font-semibold">Email: </span>
                                     <a
-                                        href="mailto:info@mehfilkitchen.com"
+                                        href="mailto:hayatmehfil@gmail.com"
                                         className="hover:underline"
                                     >
-                                        info@mehfilkitchen.com
+                                        hayatmehfil@gmail.com
                                     </a>
                                 </div>
                                 <div>
