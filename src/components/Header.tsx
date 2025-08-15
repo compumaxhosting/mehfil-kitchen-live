@@ -71,7 +71,7 @@ export default function Navbar() {
               width={120}
               height={60}
               quality={95}
-              priority={true} // For above-the-fold images
+              priority={true}
             />
           </Link>
         </div>
@@ -104,8 +104,8 @@ export default function Navbar() {
             {/* Dropdown */}
             <div
               className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${cateringDropdownOpen
-                ? "opacity-100 visible translate-y-0"
-                : "opacity-0 invisible translate-y-2"
+                  ? "opacity-100 visible translate-y-0"
+                  : "opacity-0 invisible translate-y-2"
                 }`}
             >
               <div className="py-2 w-48">
@@ -147,7 +147,7 @@ export default function Navbar() {
         </div>
 
         {/* Hamburger (Mobile) */}
-        <div className="lg:hidden">
+        <div className="z-50 lg:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-white">
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -155,17 +155,17 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {/* Mobile Menu */}
       <div
         className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out bg-white ${menuOpen ? "max-h-[500px]" : "max-h-0"
           }`}
       >
-        <div className="px-6 py-4 text-black space-y-2">
+        <div className="px-6 py-4 text-black space-y-2 max-h-[500px] overflow-y-auto">
           {["Home", "About", "Menu", "Gallery"].map((text) => (
             <Link
               key={text}
               href={text === "Home" ? "/" : `/${text.toLowerCase()}`}
               className="block py-2 border-b border-gray-200"
+              onClick={() => setMenuOpen(false)}
             >
               {text}
             </Link>
@@ -187,14 +187,15 @@ export default function Navbar() {
 
             <div
               className={`overflow-hidden transition-all duration-300 ${cateringDropdownOpen
-                ? "max-h-64 opacity-100"
-                : "max-h-0 opacity-0"
+                  ? "max-h-64 opacity-100"
+                  : "max-h-0 opacity-0"
                 }`}
             >
               <div className="pl-4 py-2 space-y-1">
                 <Link
                   href="/catering"
                   className="block py-1 text-sm text-gray-600 hover:text-black"
+                  onClick={() => setMenuOpen(false)}
                 >
                   All Catering Services
                 </Link>
@@ -203,6 +204,7 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     className="block py-1 text-sm text-gray-600 hover:text-black"
+                    onClick={() => setMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -237,9 +239,75 @@ export default function Navbar() {
           </a>
 
           {/* Contact */}
-          <Link href="/contact" className="block py-2 border-b border-gray-200">
+          <Link
+            href="/contact"
+            className="block py-2 border-b border-gray-200"
+            onClick={() => setMenuOpen(false)}
+          >
             Contact
           </Link>
+
+          {/* social media icons */}
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            {/* Social Icons */}
+            <div className="flex flex-row gap-2 order-1 md:order-2">
+              {/* Facebook */}
+              <a href="https://www.facebook.com/mehfilkitchen/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-12 h-12 transition-transform duration-300 transform hover:scale-110">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="text-[#0866FF]">
+                  <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" fill="currentColor" />
+                </svg>
+              </a>
+
+              {/* Instagram with gradient */}
+              <a href="https://www.instagram.com/mehfilkitchen.skokie/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-12 h-12 transition-transform duration-300 transform hover:scale-110">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="url(#instagramGradient)"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="instagramGradient" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#feda75" />
+                      <stop offset="25%" stopColor="#fa7e1e" />
+                      <stop offset="50%" stopColor="#d62976" />
+                      <stop offset="75%" stopColor="#962fbf" />
+                      <stop offset="100%" stopColor="#4f5bd5" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM12 15.5C13.9 15.5 15.5 13.9 15.5 12C15.5 10.1 13.9 8.5 12 8.5C10.1 8.5 8.5 10.1 8.5 12C8.5 13.9 10.1 15.5 12 15.5ZM17.5 6.5C16.7 6.5 16 7.2 16 8C16 8.8 16.7 9.5 17.5 9.5C18.3 9.5 19 8.8 19 8C19 7.2 18.3 6.5 17.5 6.5Z" />
+                </svg>
+              </a>
+
+              {/* Twitter/X */}
+              <a href="https://x.com/mehfilkitchen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-12 h-12 transition-transform duration-300 transform hover:scale-110">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="text-black">
+                  <path d="M17.53 3H21.25L13.91 10.87L22.5 21H16.16L10.97 14.68L4.97 21H1.23L8.97 12.62L0.75 3H7.24L12 8.74L17.53 3ZM16.38 19.13H18.19L6.22 4.76H4.29L16.38 19.13Z" fill="currentColor" />
+                </svg>
+              </a>
+
+              {/* YouTube */}
+              <a href="https://www.youtube.com/@mehfilkitchenskokie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-12 h-12 transition-transform duration-300 transform hover:scale-110">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="text-[#FF0033]">
+                  <path d="M10 15L15.19 12L10 9V15ZM21.56 7.17C21.69 7.64 21.78 8.27 21.84 9.07C21.91 9.87 21.94 10.56 21.94 11.16L22 12C22 14.19 21.84 15.8 21.56 16.83C21.31 17.73 20.73 18.31 19.83 18.56C19.36 18.69 18.5 18.78 17.18 18.84C15.88 18.91 14.69 18.94 13.59 18.94L12 19C7.81 19 5.2 18.84 4.17 18.56C3.27 18.31 2.69 17.73 2.44 16.83C2.31 16.36 2.22 15.73 2.16 14.93C2.09 14.13 2.06 13.44 2.06 12.84L2 12C2 9.81 2.16 8.2 2.44 7.17C2.69 6.27 3.27 5.69 4.17 5.44C4.64 5.31 5.5 5.22 6.82 5.16C8.12 5.09 9.31 5.06 10.41 5.06L12 5C16.19 5 18.8 5.16 19.83 5.44C20.73 5.69 21.31 6.27 21.56 7.17Z" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
