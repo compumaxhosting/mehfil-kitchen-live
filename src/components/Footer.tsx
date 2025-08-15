@@ -152,25 +152,29 @@ export const Footer = () => {
                                 </svg>
                             </a>
 
-                            {/* Instagram with gradient */}
-                            <a href="https://www.instagram.com/mehfilkitchen.skokie/"
+                            {/* Instagram with CSS gradient */}
+                            <a
+                                href="https://www.instagram.com/mehfilkitchen.skokie/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center justify-center w-12 h-12 transition-transform duration-300 transform hover:scale-110">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="url(#instagramGradient)"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <defs>
-                                        <linearGradient id="instagramGradient" x1="0" y1="0" x2="1" y2="1">
-                                            <stop offset="0%" stopColor="#feda75" />
-                                            <stop offset="25%" stopColor="#fa7e1e" />
-                                            <stop offset="50%" stopColor="#d62976" />
-                                            <stop offset="75%" stopColor="#962fbf" />
-                                            <stop offset="100%" stopColor="#4f5bd5" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM12 15.5C13.9 15.5 15.5 13.9 15.5 12C15.5 10.1 13.9 8.5 12 8.5C10.1 8.5 8.5 10.1 8.5 12C8.5 13.9 10.1 15.5 12 15.5ZM17.5 6.5C16.7 6.5 16 7.2 16 8C16 8.8 16.7 9.5 17.5 9.5C18.3 9.5 19 8.8 19 8C19 7.2 18.3 6.5 17.5 6.5Z" />
-                                </svg>
+                                className="flex items-center justify-center w-12 h-12 transition-transform duration-300 transform hover:scale-110"
+                            >
+                                <div
+                                    className="w-7 h-7 bg-gradient-to-tr from-[#feda75] via-[#d62976] to-[#4f5bd5] mask-icon"
+                                ></div>
+
+                                <style jsx>{`
+    .mask-icon {
+      -webkit-mask: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM12 15.5C13.9 15.5 15.5 13.9 15.5 12C15.5 10.1 13.9 8.5 12 8.5C10.1 8.5 8.5 10.1 8.5 12C8.5 13.9 10.1 15.5 12 15.5ZM17.5 6.5C16.7 6.5 16 7.2 16 8C16 8.8 16.7 9.5 17.5 9.5C18.3 9.5 19 8.8 19 8C19 7.2 18.3 6.5 17.5 6.5Z"/></svg>')
+        no-repeat center;
+      -webkit-mask-size: contain;
+      mask: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM12 15.5C13.9 15.5 15.5 13.9 15.5 12C15.5 10.1 13.9 8.5 12 8.5C10.1 8.5 8.5 10.1 8.5 12C8.5 13.9 10.1 15.5 12 15.5ZM17.5 6.5C16.7 6.5 16 7.2 16 8C16 8.8 16.7 9.5 17.5 9.5C18.3 9.5 19 8.8 19 8C19 7.2 18.3 6.5 17.5 6.5Z"/></svg>')
+        no-repeat center;
+      mask-size: contain;
+    }
+  `}</style>
                             </a>
+
 
                             {/* Twitter/X */}
                             <a href="https://x.com/mehfilkitchen"
